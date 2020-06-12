@@ -13,7 +13,7 @@ import (
 func main() {
 	err := migrations.Migrate()
 	if err != nil {
-		panic(err)
+
 	}
 	cors := handlers.CORS(
 		handlers.AllowedOrigins([]string{"*"}),
